@@ -1,0 +1,14 @@
+[2026-10-14 19:52:34,175][hydra.core.utils][ERROR] - Job failed
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\hydra\core\utils.py", line 223, in _run_job
+    ret.return_value = task_function(task_cfg)
+                       ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Admin\2_months_application\hydra\structured_configs\1_minimal\my_app_error.py", line 21, in my_app
+    if cfg.pork == 80:  # type: ignore
+       ^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314\Lib\site-packages\omegaconf\dictconfig.py", line 408, in __getattr__
+    self._format_and_raise(key=key, value=None, cause=e)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+omegaconf.errors.ConfigAttributeError: Key 'pork' not in 'MySQLConfig'. Did you mean: 'port'?
+    full_key: pork
+    object_type=MySQLConfig. Did you mean: 'port'?

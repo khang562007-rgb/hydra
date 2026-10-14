@@ -1,0 +1,4 @@
+driver: my sql # xác định loại driver/CSDL là chuỗi "my sql"
+user: omry # lưu tên tài khoản đăng nhập là "ormy"
+password: secret # lưu mk
+timeout: 5

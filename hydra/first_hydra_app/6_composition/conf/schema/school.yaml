@@ -1,0 +1,11 @@
+database: school
+tables:
+  - name: students
+    field: 
+        - name: string
+        - class: int
+  - name: exams
+    field: 
+        - profession: string
+        - time: data
+        - class: int
